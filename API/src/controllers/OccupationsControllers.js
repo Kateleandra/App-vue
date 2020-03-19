@@ -7,7 +7,6 @@ module.exports = {
         const occupations = await Occupations.find();
         return res.json(occupations);
     },
-
     async store(req, res){
         const occupation = await Occupations.create(req.body);
         return res.json(occupation);
